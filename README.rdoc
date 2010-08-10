@@ -14,14 +14,13 @@ By default, Vim will look for these files in your root, so you'll need to alias 
 == Installation: Windows
 If you've installed GVim you have a directory in Program Files (if you're on 64 bit, this is Program Files (x86)) called "Vim". Inside there is where you'll want to put all these files.
 
-# Clone this repository somewhere on your hard drive. 
-# Make a back of your Vim directory. 
-# Drop "vimrc" from the download into the Vim directory, replacing what's there
-# Double-click the Inconsolata font to install it (if you want it, that is)
-# Open up vimfiles directory and remove everything
-# copy/paste the directories inside the downloaded vim-settings directory
-# If you have a color scheme you liked using - copy that back from your old vimfiles directory (which hopefully you saved)
-# crack open GVim and have fun
+ # Clone this repository somewhere on your hard drive. 
+ # Make a back of your Vim directory. 
+ # Drop "vimrc" from the download into the Vim directory, replacing what's there
+ # Double-click the Inconsolata font to install it (if you want it, that is)
+ # Open up vimfiles directory and remove everything
+ # copy/paste the directories inside the downloaded vim-settings directory
+ # If you have a color scheme you liked using - copy that back from your old vimfiles directory (which hopefully you saved)
 
 === If you get an error about Ctags...
 This happens a lot and it's not a biggie. Just go here:

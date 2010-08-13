@@ -1,7 +1,10 @@
 " Example Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Inconsolata:h17            " Font family and font size.
+" Try and use either of these fonts if available
+set guifont=Inconsolata:h17
+set guifont=Consolas:h11
+
 set antialias                     " MacVim: smooth fonts.
 set encoding=utf-8                " Use UTF-8 everywhere.
 set guioptions-=T                 " Hide toolbar.

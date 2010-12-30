@@ -69,11 +69,9 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
-imap <Tab> <C-N>
-imap <S-Tab> <C-P>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
-nmap <S-Tab> <C-W><C-W>
+"nmap <S-Tab> <C-W><C-W>
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 

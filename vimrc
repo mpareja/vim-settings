@@ -11,6 +11,9 @@ filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
+set nowrap						  " Disable line wrapping
+nmap <silent> <leader>ww :set nowrap!<CR>
+
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 
@@ -34,6 +37,8 @@ set incsearch                     " Highlight matches as you type.
 " allow up/down navigation between wrapped lines
 nmap <silent> j gj
 nmap <silent> k gk
+nmap <silent> <down> gj
+nmap <silent> <up> gk
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 set title                         " Set the terminal's title
@@ -89,4 +94,7 @@ vmap <S-Tab> <gv
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+" ease editing of .vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 

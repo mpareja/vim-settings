@@ -2,8 +2,11 @@
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
 " Try and use either of these fonts if available
-"set guifont=Consolas\ Regular\ 13,Inconsolata\ Medium\ 12,Consolas\ Regular\ 11
-set guifont=Consolas:h12,Inconsolata\ Medium:h12,Consolas\ Regular\:h11
+if has("gui_gtk2")
+	set guifont=Consolas\ 12,Inconsolata\ 12
+elseif has("gui_win32")
+	set guifont=Consolas:h12,Inconsolata\ Medium:h12,Consolas\ Regular\:h11
+endif
 
 set antialias                     " MacVim: smooth fonts.
 set encoding=utf-8                " Use UTF-8 everywhere.

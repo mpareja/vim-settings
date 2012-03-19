@@ -17,6 +17,7 @@ If you've installed GVim you have a directory in Program Files (if you're on 64 
  # Clone this repository somewhere on your hard drive. 
  # Make a back of your Vim directory. 
  # Create ~/_vimrc as containing oneline: so c:\<path_to_repo>\vimrc. Do same for gvimrc.
+ # Create the directory ~/_vim/tmp to store swap files.
  # Double-click the Inconsolata font to install it (if you want it, that is)
  # Open up vimfiles directory and remove everything
  # copy/paste the directories inside the downloaded vim-settings directory

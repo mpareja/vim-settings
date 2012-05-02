@@ -15,6 +15,16 @@ if exists("b:did_indent")
 endif
 let b:did_indent = 1
 
+setlocal tabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
+
+" JSLint make
+setlocal makeprg=jslint\ --devel\ --node\ --vars\ --maxerr=100\ --indent=2\ --sloppy\ --nomen\ --undef\ --plusplus\ --minusminus\ --\ %
+setlocal errorformat=%-P%f,
+        \%E%>\ #%n\ %m,%Z%.%#Line\ %l\\,\ Pos\ %c,
+        \%-G%f\ is\ OK.,%-Q
+
 setlocal nosmartindent
 
 " Now, set up our indentation expression and keys that trigger it.

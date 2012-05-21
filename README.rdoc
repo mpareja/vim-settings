@@ -11,6 +11,8 @@ By default, Vim will look for these files in your root, so you'll need to alias 
 	ln -s .vimrc ~/VimSettings/vimrc
 	ln -s .gvimrc ~/VimSettings/gvimrc
 
+The last step is to install the Consola.ttf font by launching it in gnome and selecting "install font".
+
 == Installation: Windows
 If you've installed GVim you have a directory in Program Files (if you're on 64 bit, this is Program Files (x86)) called "Vim". Inside there is where you'll want to put all these files.
 

@@ -61,9 +61,6 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Or use vividchalk
-colorscheme vividchalk
-
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -98,3 +95,8 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+if !has("win32") || has("gui_win32")
+	" use solarized dark colour scheme
+	set background=dark
+	colorscheme solarized
+endif

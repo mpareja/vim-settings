@@ -4,3 +4,12 @@
 [submodule "bundle/tpope-vim-ragtag"]
 	path = bundle/tpope-vim-ragtag
 	url = git://github.com/tpope/vim-ragtag.git
+[submodule "bundle/tpope-vim-surround"]
+	path = bundle/tpope-vim-surround
+	url = git://github.com/tpope/vim-surround
+[submodule "bundle/tpope-vim-cucumber"]
+	path = bundle/tpope-vim-cucumber
+	url = git://github.com/tpope/vim-cucumber
+[submodule "bundle/tpope-vim-haml"]
+	path = bundle/tpope-vim-haml
+	url = git://github.com/tpope/vim-haml

@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+git submodule init && git submodule update
+
 if [ -e /c ]; then
 	# windows
 	VimRepo=$(cmd //C cd)

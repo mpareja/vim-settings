@@ -3,8 +3,8 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
-silent! call pathogen#runtime_append_all_bundles()
-silent! call pathogen#helptags()
+silent! call pathogen#infect()
+silent! call pathogen#incubate()
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.

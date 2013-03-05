@@ -100,3 +100,6 @@ if !has("win32") || has("gui_win32")
 	set background=dark
 	colorscheme solarized
 endif
+
+" disable automatically changing to project root vim-rooter (use <leader>cd to get there)
+let g:rooter_manual_only = 1

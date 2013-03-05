@@ -16,3 +16,6 @@
 [submodule "bundle/altercation-vim-colors-solarized"]
 	path = bundle/altercation-vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/airblade-vim-rooter"]
+	path = bundle/airblade-vim-rooter
+	url = https://github.com/airblade/vim-rooter.git

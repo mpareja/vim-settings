@@ -16,14 +16,14 @@ The last step is to install the Consola.ttf font by launching it in gnome and se
 == Installation: Windows
 If you've installed GVim you have a directory in Program Files (if you're on 64 bit, this is Program Files (x86)) called "Vim". Inside there is where you'll want to put all these files.
 
- # Clone this repository somewhere on your hard drive. 
- # Make a back of your Vim directory. 
- # Create ~/_vimrc as containing oneline: so c:\<path_to_repo>\vimrc. Do same for gvimrc.
- # Create the directory ~/_vim/tmp to store swap files.
- # Double-click the Inconsolata font to install it (if you want it, that is)
- # Open up vimfiles directory and remove everything
- # copy/paste the directories inside the downloaded vim-settings directory
- # If you have a color scheme you liked using - copy that back from your old vimfiles directory (which hopefully you saved)
+ 1. Clone this repository somewhere on your hard drive. 
+ 2. Make a back of your Vim directory. 
+ 3. Create ~/_vimrc as containing oneline: so c:\<path_to_repo>\vimrc. Do same for gvimrc.
+ 4. Create the directory ~/_vim/tmp to store swap files.
+ 5. Double-click the Inconsolata font to install it (if you want it, that is)
+ 6. Open up vimfiles directory and remove everything
+ 7. copy/paste the directories inside the downloaded vim-settings directory
+ 8. If you have a color scheme you liked using - copy that back from your old vimfiles directory (which hopefully you saved)
 
 === If you get an error about Ctags...
 This happens a lot and it's not a biggie. Just go here:
@@ -33,6 +33,11 @@ And get the ctags download. This is a tool that parses your code and allows to d
 
 The plugins I use are managed through "Pathogen" - a plugin bundler that makes thing pretty simple. If you ever want to install a new plugin in the future, just drop it into the "bundle" directory and you're good to go.
 
+== Updating bundles
+Use the following script to update all submodules. Make sure to commit them separately so you can back out changes easily.
+
+  git submodule foreach "(git checkout master; git pull)&"
+  Open up vim and enter the following command to update help: call pathogen#helptags()
 
 == Colors
 I've redone the VividChalk theme as I think it was way too Miami Vice. I've toned down the colors to be a bit more true to VibrantInk (as well as borrowing from Blackboard).

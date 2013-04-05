@@ -84,6 +84,13 @@ vmap <S-Tab> <gv
 "vnoremap ; :
 "vnoremap : ;
 
+" setup code folding
+set foldmethod=syntax
+set foldnestmax=10
+set foldenable
+set foldlevel=1
+map zM :set foldlevel=1<CR>
+
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2

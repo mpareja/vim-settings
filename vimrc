@@ -87,7 +87,7 @@ vmap <S-Tab> <gv
 " setup code folding
 set foldmethod=syntax
 set foldnestmax=10
-set foldenable
+set nofoldenable
 set foldlevel=1
 map zM :set foldlevel=1<CR>
 

@@ -19,11 +19,9 @@ If you've installed GVim you have a directory in Program Files (if you're on 64 
  1. Clone this repository somewhere on your hard drive. 
  2. Make a back of your Vim directory. 
  3. Create ~/_vimrc as containing oneline: so c:\<path_to_repo>\vimrc. Do same for gvimrc.
- 4. Create the directory ~/_vim/tmp to store swap files.
- 5. Double-click the Inconsolata font to install it (if you want it, that is)
- 6. Open up vimfiles directory and remove everything
- 7. copy/paste the directories inside the downloaded vim-settings directory
- 8. If you have a color scheme you liked using - copy that back from your old vimfiles directory (which hopefully you saved)
+ 4. Open up vimfiles directory and remove everything
+ 5. Copy/paste the directories inside the downloaded vim-settings directory.
+ 6. Execute ./install.sh from bash.
  9. Open up vim and enter the following command to update help: call pathogen#helptags() 
 
 === If you get an error about Ctags...

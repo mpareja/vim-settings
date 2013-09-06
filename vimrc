@@ -97,6 +97,7 @@ map zM :set foldlevel=1<CR>
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+autocmd BufNewFile,BufRead *.csx set filetype=cs
 
 " ease editing of .vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>

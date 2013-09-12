@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 git submodule init && git submodule update
 
@@ -20,6 +19,16 @@ if [ -e /c ]; then
 	mkdir -p $HOME/_vim/tmp
 else
 	VimRepo=$(pwd)
-	# linux
-	echo Install not yet scripted for linux.
+
+	echo Linking .vimrc and .gvimrc
+	[ -e ~/.vimrc ] || ln -s $VimRepo/vimrc ~/.vimrc
+	[ -e ~/.gvimrc ] || ln -s $VimRepo/gvimrc ~/.gvimrc
+
+	which ctags
+	if [ $? -ne 0 ]; then
+		echo Installing Exuberant Tags.
+		sudo apt-get install exuberant-ctags
+	else
+		echo Verified Exuberant Tags is already installed.
+	fi
 fi

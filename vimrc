@@ -33,6 +33,10 @@ set ruler                         " Show cursor position.
 set incsearch                     " Highlight matches as you type.
 "set hlsearch                      " Highlight matches.
 
+" avoid pause when hitting escape
+set ttimeout
+set ttimeoutlen=50
+
 "set wrap                          " Turn on line wrapping.
 " allow up/down navigation between wrapped lines
 nmap <silent> j gj

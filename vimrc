@@ -66,15 +66,16 @@ set laststatus=2                  " Show the status line all the time
 " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+"map <leader>tt :tabnew<cr>
+"map <leader>te :tabedit
+"map <leader>tc :tabclose<cr>
+"map <leader>to :tabonly<cr>
+"map <leader>tn :tabnext<cr>
+"map <leader>tp :tabprevious<cr>
+"map <leader>tf :tabfirst<cr>
+"map <leader>tl :tablast<cr>
+"map <leader>tm :tabmove
+
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 "nmap <S-Tab> <C-W><C-W>
@@ -102,6 +103,18 @@ map zM :set foldlevel=1<CR>
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 autocmd BufNewFile,BufRead *.csx set filetype=cs
+
+" Toggle MakeGreen
+"   For some odd reason, the initial autocmd for enabling needs to be run
+"   twice. Disable it in between to in case attaching twice is a problem.
+map <leader>tt :MakeGreen<CR>
+map <leader>ts :!npm test<CR>
+map <leader>te :autocmd BufWritePost *.js MakeGreen <CR> :autocmd! BufWritePost *.js MakeGreen <CR> :autocmd BufWritePost *.js MakeGreen<CR>
+map <leader>td :autocmd! BufWritePost *.js MakeGreen<CR>
+
+" navigation
+map <leader>gg :TernDef<CR>
+map <leader>gh :TernDocBrowse<CR>
 
 " ease editing of .vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>

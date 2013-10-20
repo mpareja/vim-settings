@@ -16,7 +16,6 @@ Clone this repository and run the install script:
 
     git clone https://github.com/mpareja/vim-settings.git ~/.vim
     cd ~/.vim && ./install.sh
-	vim -c "call pathogen#helptags()"
 
 The default font is Consolas, so you may want to install the `Consola.ttf` font by double clicking on it and choosing to install.
 

@@ -31,6 +31,8 @@ else
 	else
 		echo Verified Exuberant Tags is already installed.
 	fi
+
+	mkdir -p $HOME/.vim/tmp
 fi
 
 vim -c "call pathogen#helptags() | q"

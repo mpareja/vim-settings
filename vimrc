@@ -136,3 +136,6 @@ let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])(\.
 
 nnoremap <silent> <leader>sf :FufFile<CR>
 nnoremap <silent> <leader>sc :FufCoverageFile<CR>
+nnoremap <silent> <leader>sb :FufBuffer<CR>
+nnoremap <silent> <leader>sq :FufQuickfix<CR>
+nnoremap <silent> <leader>ss :Ggrep <cword><CR>

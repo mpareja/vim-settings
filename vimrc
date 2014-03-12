@@ -139,3 +139,6 @@ nnoremap <silent> <leader>sc :FufCoverageFile<CR>
 nnoremap <silent> <leader>sb :FufBuffer<CR>
 nnoremap <silent> <leader>sq :FufQuickfix<CR>
 nnoremap <silent> <leader>ss :Ggrep <cword><CR>
+
+" Better Accented Character Support
+inoremap <expr>  <C-K>   BDG_GetDigraph()

@@ -142,3 +142,6 @@ nnoremap <silent> <leader>ss :Ggrep <cword><CR>
 
 " Better Accented Character Support
 inoremap <expr>  <C-K>   BDG_GetDigraph()
+
+" enable mouse support in terminal
+set mouse=a

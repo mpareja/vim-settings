@@ -93,8 +93,8 @@ vmap <S-Tab> <gv
 set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
-set foldlevel=1
-map zM :set foldlevel=1<CR>
+"set foldlevel=1
+map zM :set foldenable<CR>:set foldlevel=1<CR>
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax

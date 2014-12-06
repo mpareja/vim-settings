@@ -146,3 +146,6 @@ inoremap <expr>  <C-K>   BDG_GetDigraph()
 
 " enable mouse support in terminal
 set mouse=a
+
+" tab settings overrides
+autocmd FileType jade set ts=2 sw=2 expandtab

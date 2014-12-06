@@ -37,3 +37,6 @@
 [submodule "bundle/atweiden-vim-betterdigraphs"]
 	path = bundle/atweiden-vim-betterdigraphs
 	url = https://github.com/atweiden/vim-betterdigraphs.git
+[submodule "bundle/digitaltoad-vim-jade"]
+	path = bundle/digitaltoad-vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git

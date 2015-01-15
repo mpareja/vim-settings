@@ -33,6 +33,10 @@ else
 	fi
 
 	mkdir -p $HOME/.vim/tmp
+
+	echo Installing Consola font
+	mkdir -p $HOME/.fonts
+	cp Consola.ttf $HOME/.fonts/
 fi
 
 vim -c "call pathogen#helptags() | q"

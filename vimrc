@@ -109,8 +109,8 @@ autocmd BufNewFile,BufRead *.csx set filetype=cs
 "   twice. Disable it in between to in case attaching twice is a problem.
 map <leader>tt :MakeGreen<CR>
 map <leader>ts :!npm test<CR>
-map <leader>te :autocmd BufWritePost *.js MakeGreen <CR> :autocmd! BufWritePost *.js MakeGreen <CR> :autocmd BufWritePost *.js MakeGreen<CR>
-map <leader>td :autocmd! BufWritePost *.js MakeGreen<CR>
+map <leader>te :autocmd BufWritePost *.js MakeGreen<CR>
+map <leader>td :autocmd! BufWritePost *.js<CR>
 
 " navigation
 map <leader>gg :TernDef<CR>

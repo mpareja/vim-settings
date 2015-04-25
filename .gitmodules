@@ -40,3 +40,6 @@
 [submodule "bundle/digitaltoad-vim-jade"]
 	path = bundle/digitaltoad-vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "bundle/tpope-vim-dispatch"]
+	path = bundle/tpope-vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git

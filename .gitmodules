@@ -43,3 +43,12 @@
 [submodule "bundle/tpope-vim-dispatch"]
 	path = bundle/tpope-vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "bundle/Shougo-unit.vim"]
+	path = bundle/Shougo-unit.vim
+	url = git@github.com:Shougo/unite.vim
+[submodule "bundle/Shougo-vimproc"]
+	path = bundle/Shougo-vimproc
+	url = git@github.com:Shougo/vimproc
+[submodule "bundle/osyo-manga-unite-quickfix"]
+	path = bundle/osyo-manga-unite-quickfix
+	url = git@github.com:osyo-manga/unite-quickfix

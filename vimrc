@@ -134,12 +134,23 @@ let g:fuf_dir_exclude = '\v(^|[/\\])(\.(hg|git|bzr))|(node_modules)|(build)(|(co
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])(\.(hg|git|bzr))|(build)|(node_modules)|(coverage)($|[/\\])'
 let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])(\.(hg|git|bzr))|(build)|(node_modules)|(coverage)($|[/\\])'
 
-nnoremap <silent> <leader>sf :FufFile<CR>
-nnoremap <silent> <leader>sc :FufCoverageFile<CR>
-nnoremap <silent> <leader>sb :FufBuffer<CR>
-nnoremap <silent> <leader>sq :FufQuickfix<CR>
-nnoremap <silent> <leader>sr :FufRenewCache<CR>
 nnoremap <silent> <leader>ss :Ggrep <cword><CR>
+if has("win32")
+	nnoremap <silent> <leader>sb :FufBuffer<CR>
+	nnoremap <silent> <leader>sc :FufCoverageFile<CR>
+	nnoremap <silent> <leader>sf :FufFile<CR>
+	nnoremap <silent> <leader>sq :FufQuickfix<CR>
+	nnoremap <silent> <leader>sr :FufRenewCache<CR>
+else
+	" Note to Windows self: compare async and no async file_rec on Windows
+	nnoremap <silent> <leader>sb :Unite -start-insert buffer<CR>
+	nnoremap <silent> <leader>sc :Unite -start-insert file_rec/async<CR>
+	nnoremap <silent> <leader>sq :Unite quickfix<CR>
+	nnoremap <silent> <leader>sr :UniteResume<CR>
+endif
+
+let g:unite_source_file_async_command = 'ag -l -g "" --hidden --ignore ".git/"'
+let g:unite_source_rec_async_command = 'ag -l -g "" --hidden --ignore ".git/"'
 
 " Better Accented Character Support
 inoremap <expr>  <C-K>   BDG_GetDigraph()

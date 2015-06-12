@@ -52,3 +52,6 @@
 [submodule "bundle/osyo-manga-unite-quickfix"]
 	path = bundle/osyo-manga-unite-quickfix
 	url = git@github.com:osyo-manga/unite-quickfix
+[submodule "bundle/junegunn-vim-github-dashboard"]
+	path = bundle/junegunn-vim-github-dashboard
+	url = git@github.com:junegunn/vim-github-dashboard

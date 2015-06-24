@@ -37,6 +37,10 @@ else
 	echo Installing Consola font
 	mkdir -p $HOME/.fonts
 	cp Consola.ttf $HOME/.fonts/
+
+	echo Compiling vimproc module
+	cd bundle/Shougo-vimproc
+	make
 fi
 
 vim -c "call pathogen#helptags() | q"

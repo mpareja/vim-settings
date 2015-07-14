@@ -149,8 +149,8 @@ else
 	nnoremap <silent> <leader>sr :UniteResume<CR>
 endif
 
-let g:unite_source_file_async_command = 'ag -l -g "" --hidden --ignore ".git/"'
-let g:unite_source_rec_async_command = 'ag -l -g "" --hidden --ignore ".git/"'
+let g:unite_source_file_async_command = 'ag -l -g "" --hidden --ignore ".git/" --ignore "node_modules"'
+let g:unite_source_rec_async_command = 'ag -l -g "" --hidden --ignore ".git/" --ignore "node_modules"'
 
 " Better Accented Character Support
 inoremap <expr>  <C-K>   BDG_GetDigraph()

@@ -55,3 +55,6 @@
 [submodule "bundle/junegunn-vim-github-dashboard"]
 	path = bundle/junegunn-vim-github-dashboard
 	url = git@github.com:junegunn/vim-github-dashboard
+[submodule "bundle/janko-m-vim-test"]
+	path = bundle/janko-m-vim-test
+	url = git@github.com:janko-m/vim-test

@@ -34,5 +34,4 @@ In Windows the instructions are a bit lengthier:
 
 Use the following script to update all submodules. Make sure to commit them separately so you can back out changes easily.
 
-  git submodule foreach "(git checkout master; git pull)&"
-  Open up vim and enter the following command to update help: call pathogen#helptags()
+  ./update.sh

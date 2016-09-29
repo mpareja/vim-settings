@@ -61,3 +61,6 @@
 [submodule "bundle/vim-utils-vim-most-minimal-folds"]
 	path = bundle/vim-utils-vim-most-minimal-folds
 	url = git://github.com/bruno-/vim-most-minimal-folds.git
+[submodule "bundle/pangloss-vim-javascript"]
+	path = bundle/pangloss-vim-javascript
+	url = git://github.com/pangloss/vim-javascript

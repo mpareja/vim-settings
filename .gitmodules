@@ -58,3 +58,6 @@
 [submodule "bundle/janko-m-vim-test"]
 	path = bundle/janko-m-vim-test
 	url = git@github.com:janko-m/vim-test
+[submodule "bundle/vim-utils-vim-most-minimal-folds"]
+	path = bundle/vim-utils-vim-most-minimal-folds
+	url = git://github.com/bruno-/vim-most-minimal-folds.git

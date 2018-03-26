@@ -154,7 +154,7 @@ let g:unite_source_file_async_command =
 	\ 'ag -l --nocolour --nogroup --hidden --follow --ignore ".git/" --ignore "node_modules" -g ""'
 let g:unite_source_rec_async_command = [
 	\ 'ag', '-l', '--nocolor', '--nogroup', '--hidden', '--follow',
-	\ '--ignore', '.git/', '--ignore', 'node_modules/', '-g', '' ]
+	\ '--ignore', '.git/', '--ignore', 'node_modules/', '--ignore', 'coverage/', '-g', '' ]
 
 " Better Accented Character Support
 inoremap <expr>  <C-K>   BDG_GetDigraph()

@@ -110,6 +110,7 @@ autocmd BufNewFile,BufRead *.csx set filetype=cs
 "map <leader>tt :MakeGreen<CR>
 map <leader>tt :TestNearest<CR>
 map <leader>ts :TestFile<CR>
+map <leader>tr :TestLast<CR>
 map <leader>te :autocmd BufWritePost *.js MakeGreen<CR>
 map <leader>td :autocmd! BufWritePost *.js<CR>
 

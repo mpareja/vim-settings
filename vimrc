@@ -117,6 +117,11 @@ map <leader>td :autocmd! BufWritePost *.js<CR>
 " navigation
 map <leader>gg :TernDef<CR>
 map <leader>gh :TernDocBrowse<CR>
+map <leader>gl :TlistToggle<CR>
+
+let Tlist_Close_On_Select = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_File_Fold_Auto_Close = 1
 
 " ease editing of .vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>

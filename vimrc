@@ -37,6 +37,8 @@ set incsearch                     " Highlight matches as you type.
 set ttimeout
 set ttimeoutlen=50
 
+let g:netrw_liststyle= 3
+
 "set wrap                          " Turn on line wrapping.
 " allow up/down navigation between wrapped lines
 nmap <silent> j gj

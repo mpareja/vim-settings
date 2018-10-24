@@ -110,8 +110,8 @@ autocmd BufNewFile,BufRead *.csx set filetype=cs
 "   For some odd reason, the initial autocmd for enabling needs to be run
 "   twice. Disable it in between to in case attaching twice is a problem.
 "map <leader>tt :MakeGreen<CR>
-map <leader>tt :TestNearest<CR>
-map <leader>ts :TestFile<CR>
+map <leader>tt mT:TestNearest<CR>
+map <leader>ts mT:TestFile<CR>
 map <leader>tr :TestLast<CR>
 map <leader>te :autocmd BufWritePost *.js MakeGreen<CR>
 map <leader>td :autocmd! BufWritePost *.js<CR>

@@ -35,3 +35,12 @@ In Windows the instructions are a bit lengthier:
 Use the following script to update all submodules. Make sure to commit them separately so you can back out changes easily.
 
   ./update.sh
+
+## Adding a new bundle
+
+```
+git submodule add <URL> bundle/<user>-<repo>
+
+# update help index
+vim -c "call pathogen#helptags() | q"
+```

@@ -67,6 +67,9 @@
 [submodule "bundle/mxw-vim-jsx"]
 	path = bundle/mxw-vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "bundle/qpkorr-vim-bufkill"]
+	path = bundle/qpkorr-vim-bufkill
+	url = git@github.com:qpkorr/vim-bufkill.git
 [submodule "bundle/tpope-vim-unimpaired"]
 	path = bundle/tpope-vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git

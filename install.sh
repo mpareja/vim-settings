@@ -42,9 +42,11 @@ else
 	cd bundle/Shougo-vimproc
 	make
 
-	echo the Unite file search configuration assumes ag is installed
-	read -n 1 -p 'Install silversearcher-ag file finder (Y/n)? ' CONFIRM
-	[ "$CONFIRM" = 'n' ] || sudo apt-get install -y silversearcher-ag
+	if ! hash ag; then
+		echo "The file search configuration assumes ag is installed."
+		read -n 1 -p 'Install silversearcher-ag file finder (Y/n)? ' CONFIRM
+		[ "$CONFIRM" = 'n' ] || sudo apt-get install -y silversearcher-ag
+	fi
 fi
 
 vim -c "call pathogen#helptags() | q"

@@ -106,6 +106,9 @@ map zM :set foldenable<CR>:set foldlevel=1<CR>
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 autocmd BufNewFile,BufRead *.csx set filetype=cs
 
+
+let g:dispatch_terminal_exec = 'i3-sensible-terminal -e'
+
 " Toggle MakeGreen
 "   For some odd reason, the initial autocmd for enabling needs to be run
 "   twice. Disable it in between to in case attaching twice is a problem.

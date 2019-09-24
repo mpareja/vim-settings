@@ -73,3 +73,6 @@
 [submodule "bundle/tpope-vim-unimpaired"]
 	path = bundle/tpope-vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
+[submodule "bundle/ludovicchabant-vim-gutentags"]
+	path = bundle/ludovicchabant-vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags

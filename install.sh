@@ -24,12 +24,21 @@ else
 	[ -e ~/.vimrc ] || ln -s $VimRepo/vimrc ~/.vimrc
 	[ -e ~/.gvimrc ] || ln -s $VimRepo/gvimrc ~/.gvimrc
 
-	which ctags
-	if [ $? -ne 0 ]; then
-		echo Installing Exuberant Tags.
-		sudo apt-get install exuberant-ctags
+	which ctags >/dev/null && (ctags --version | grep -q 'Universal Ctags')
+	if  [ $? -ne 0 ]; then
+		echo Installing Universal Tags.
+		pushd $(mktmp -d)
+
+		git clone https://github.com/universal-ctags/ctags.git
+		cd ctags
+		./autogen.sh
+		./configure
+		make
+		sudo make install
+
+		popd
 	else
-		echo Verified Exuberant Tags is already installed.
+		echo Verified Universal Tags is already installed.
 	fi
 
 	mkdir -p $HOME/.vim/tmp

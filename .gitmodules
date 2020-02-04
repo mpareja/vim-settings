@@ -76,3 +76,6 @@
 [submodule "bundle/ludovicchabant-vim-gutentags"]
 	path = bundle/ludovicchabant-vim-gutentags
 	url = git@github.com:ludovicchabant/vim-gutentags
+[submodule "bundle/jreybert-vimagit"]
+	path = bundle/jreybert-vimagit
+	url = https://github.com/jreybert/vimagit

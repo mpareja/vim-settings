@@ -27,7 +27,16 @@ else
 	which ctags >/dev/null && (ctags --version | grep -q 'Universal Ctags')
 	if  [ $? -ne 0 ]; then
 		echo Installing Universal Tags.
-		pushd $(mktmp -d)
+
+		which autogen >/dev/null && which autoconf >/dev/null
+		if [ $? -ne 0 ]; then
+			echo
+			echo "ERROR: Unable to install Universal Tags. Need to run:"
+			echo "	sudo apt install autogen autoconf"
+			exit 1
+		fi
+
+		pushd $(mktemp -d)
 
 		git clone https://github.com/universal-ctags/ctags.git
 		cd ctags
@@ -37,16 +46,20 @@ else
 		sudo make install
 
 		popd
+
+    echo Universal Tags installed.
 	else
 		echo Verified Universal Tags is already installed.
 	fi
 
 	mkdir -p $HOME/.vim/tmp
 
+  echo
 	echo Installing Consola font
 	mkdir -p $HOME/.fonts
 	cp Consola.ttf $HOME/.fonts/
 
+  echo
 	echo Compiling vimproc module
 	cd bundle/Shougo-vimproc
 	make

@@ -12,7 +12,6 @@ filetype plugin indent on         " Turn on file type detection.
 runtime macros/matchit.vim        " Load the matchit plugin.
 
 set nowrap						  " Disable line wrapping
-nmap <silent> <leader>ww :set nowrap!<CR>
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -80,16 +79,6 @@ set laststatus=2                  " Show the status line all the time
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
-"nmap <S-Tab> <C-W><C-W>
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
-
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
-
-"vnoremap ; :
-"vnoremap : ;
 
 " setup code folding
 set foldmethod=syntax

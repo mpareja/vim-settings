@@ -102,6 +102,7 @@ let g:dispatch_terminal_exec = 'i3-sensible-terminal -e'
 "   For some odd reason, the initial autocmd for enabling needs to be run
 "   twice. Disable it in between to in case attaching twice is a problem.
 "map <leader>tt :MakeGreen<CR>
+map <leader>tl :Start npm run lint -- --fix %<CR>
 map <leader>tt mT:TestNearest<CR>
 map <leader>ts mT:TestFile<CR>
 map <leader>tw :Start node_modules/.bin/jest --no-coverage --watch --notify -- %<CR>

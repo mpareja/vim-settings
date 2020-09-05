@@ -153,6 +153,7 @@ else
 	nnoremap <silent> <leader>sr :UniteResume<CR>
 endif
 
+map <silent> <Leader>m :tabnew +MagitOnly<CR>
 let g:unite_source_file_async_command =
 	\ 'ag -l --nocolour --nogroup --hidden --follow --ignore ".git/" --ignore "node_modules" -g ""'
 let g:unite_source_rec_async_command = [

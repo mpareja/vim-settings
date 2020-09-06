@@ -79,3 +79,12 @@
 [submodule "bundle/jreybert-vimagit"]
 	path = bundle/jreybert-vimagit
 	url = https://github.com/jreybert/vimagit
+[submodule "bundle/garbas_vim-snipmate"]
+	path = bundle/garbas_vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/marcweber_vim-addon-mw-utils"]
+	path = bundle/marcweber_vim-addon-mw-utils
+	url = https://github.com/marcweber/vim-addon-mw-utils.git
+[submodule "bundle/tomtom_tlib_vim"]
+	path = bundle/tomtom_tlib_vim
+	url = https://github.com/tomtom/tlib_vim

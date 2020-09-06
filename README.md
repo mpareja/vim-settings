@@ -44,3 +44,7 @@ git submodule add <URL> bundle/<user>-<repo>
 # update help index
 vim -c "call pathogen#helptags() | q"
 ```
+
+## Bundle Dependencies
+
+vim-snipmate depends on vim-addon-mw-utils and tomtom-tlib. That's why they were added.

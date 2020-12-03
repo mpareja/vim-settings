@@ -90,6 +90,11 @@ map zM :set foldenable<CR>:set foldlevel=1<CR>
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType tf  setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType json  setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType md  setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType sh  setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType yaml  setlocal shiftwidth=2 tabstop=2 expandtab
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec

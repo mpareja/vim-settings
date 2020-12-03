@@ -1,3 +1,8 @@
+snippet af "async function expression"
+	const ${1} = async () => {
+	  ${2}
+	}
+
 snippet tne "throw error"
 	throw new Error('${1:description}')
 
@@ -8,39 +13,43 @@ snippet try "try { ... } catch(e) { ... }"
 		${2:/* handle error */}
 	}
 
-snippet r "const { asdklfj } = require('asdlkfj')'
+snippet r "const { asdklfj } = require('asdlkfj')"
 	const { ${1} } = require('${2}')
+
+snippet i "import { THING } from 'PATH'"
+	import { ${1} } from '${2}'
+
+snippet cl "console.log"
+	console.log(${1})
 
 # mocha / jasmine / jest
 
 snippet des "Describe (js)"
 	describe('${1:description}', () => {
-		$0
 	})
 
 snippet it "it (js)"
 	it('${1:description}', () => {
-		$0
+	})
+
+snippet ita "it (js)"
+	it('${1:description}', async () => {
 	})
 
 snippet bef "before each (js)"
 	beforeEach(() => {
-		$0
 	})
 
 snippet aft "after each (js)"
 	afterEach(() => {
-		$0
 	})
 
 snippet befa "before all (js)"
 	beforeAll(() => {
-		$0
 	})
 
 snippet afta "after all (js)"
 	afterAll(() => {
-		$0
 	})
 
 snippet ex "expect (js)"
@@ -48,6 +57,18 @@ snippet ex "expect (js)"
 
 snippet ee "expect to equal (js)"
 	expect(${1:target}).toEqual(${2:value})
+
+snippet ees "expect to equal string (js)"
+	expect(${1:target}).toEqual(expect.any(String))
+
+snippet een "expect to equal number (js)"
+	expect(${1:target}).toEqual(expect.any(Number))
+
+snippet eea "expect to equal array (js)"
+	expect(${1:target}).toEqual(expect.any(Array))
+
+snippet eio "expect instance of (js)"
+	expect(${1:target}).toBeInstanceOf(${2:Error})
 
 snippet el "expect to be less than (js)"
 	expect(${1:target}).toBeLessThan(${2:value})
@@ -70,7 +91,7 @@ snippet et "expect to be truthy (js)"
 snippet ef "expect to be falsy (js)"
 	expect(${1:target}).toBeFalsy()
 
-snippet etbd "expect to be defined (js)"
+snippet ed "expect to be defined (js)"
 	expect(${1:target}).toBeDefined()
 
 snippet eud "expect to be defined (js)"

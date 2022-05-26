@@ -135,6 +135,10 @@ if !has("win32") || has("gui_win32")
 	colorscheme solarized
 endif
 
+" bring up cheatsheet
+nmap <silent> <leader>eh :e ~/.vim/cheatsheet.md<CR>
+nmap <silent> <leader>ejs :!cat ~/.vim/snippets/javascript.snippets<CR>
+
 " disable automatically changing to project root vim-rooter (use <leader>cd to get there)
 let g:rooter_manual_only = 1
 

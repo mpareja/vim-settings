@@ -67,7 +67,14 @@ else
 	if ! hash ag; then
 		echo "The file search configuration assumes ag is installed."
 		read -n 1 -p 'Install silversearcher-ag file finder (Y/n)? ' CONFIRM
-		[ "$CONFIRM" = 'n' ] || sudo apt-get install -y silversearcher-ag
+		[ "$CONFIRM" = 'n' ] || {
+			which brew >/dev/null
+			if	[ $? -ne 0 ]; then
+				sudo apt-get install -y silversearcher-ag
+			else
+				brew install ag
+			fi;
+		}
 	fi
 fi
 

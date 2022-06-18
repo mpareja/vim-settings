@@ -1,27 +1,27 @@
 [submodule "bundle/tpope-vim-ragtag"]
 	path = bundle/tpope-vim-ragtag
-	url = git@github.com:tpope/vim-ragtag.git
+	url = https://github.com/tpope/vim-ragtag.git
 [submodule "bundle/tpope-vim-surround"]
 	path = bundle/tpope-vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/tpope-vim-cucumber"]
 	path = bundle/tpope-vim-cucumber
-	url = git@github.com:tpope/vim-cucumber.git
+	url = https://github.com/tpope/vim-cucumber.git
 [submodule "bundle/tpope-vim-haml"]
 	path = bundle/tpope-vim-haml
-	url = git@github.com:tpope/vim-haml.git
+	url = https://github.com/tpope/vim-haml.git
 [submodule "bundle/reinh-vim-makegreen"]
 	path = bundle/reinh-vim-makegreen
-	url = git@github.com:reinh/vim-makegreen.git
+	url = https://github.com/reinh/vim-makegreen.git
 [submodule "bundle/altercation-vim-colors-solarized"]
 	path = bundle/altercation-vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/airblade-vim-rooter"]
 	path = bundle/airblade-vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
 [submodule "bundle/tpope-vim-fugitive"]
 	path = bundle/tpope-vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/scrooloose-syntastic"]
 	path = bundle/scrooloose-syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -42,40 +42,40 @@
 	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/tpope-vim-dispatch"]
 	path = bundle/tpope-vim-dispatch
-	url = git@github.com:tpope/vim-dispatch.git
+	url = https://github.com/tpope/vim-dispatch.git
 [submodule "bundle/Shougo-unit.vim"]
 	path = bundle/Shougo-unit.vim
-	url = git@github.com:Shougo/unite.vim
+	url = https://github.com/Shougo/unite.vim
 [submodule "bundle/Shougo-vimproc"]
 	path = bundle/Shougo-vimproc
-	url = git@github.com:Shougo/vimproc
+	url = https://github.com/Shougo/vimproc
 [submodule "bundle/osyo-manga-unite-quickfix"]
 	path = bundle/osyo-manga-unite-quickfix
-	url = git@github.com:osyo-manga/unite-quickfix
+	url = https://github.com/osyo-manga/unite-quickfix
 [submodule "bundle/junegunn-vim-github-dashboard"]
 	path = bundle/junegunn-vim-github-dashboard
-	url = git@github.com:junegunn/vim-github-dashboard
+	url = https://github.com/junegunn/vim-github-dashboard
 [submodule "bundle/janko-m-vim-test"]
 	path = bundle/janko-m-vim-test
-	url = git@github.com:janko-m/vim-test
+	url = https://github.com/janko-m/vim-test
 [submodule "bundle/vim-utils-vim-most-minimal-folds"]
 	path = bundle/vim-utils-vim-most-minimal-folds
-	url = git@github.com:bruno-/vim-most-minimal-folds.git
+	url = https://github.com/bruno-/vim-most-minimal-folds.git
 [submodule "bundle/pangloss-vim-javascript"]
 	path = bundle/pangloss-vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/mxw-vim-jsx"]
 	path = bundle/mxw-vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
 [submodule "bundle/qpkorr-vim-bufkill"]
 	path = bundle/qpkorr-vim-bufkill
-	url = git@github.com:qpkorr/vim-bufkill.git
+	url = https://github.com/qpkorr/vim-bufkill.git
 [submodule "bundle/tpope-vim-unimpaired"]
 	path = bundle/tpope-vim-unimpaired
-	url = git@github.com:tpope/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/ludovicchabant-vim-gutentags"]
 	path = bundle/ludovicchabant-vim-gutentags
-	url = git@github.com:ludovicchabant/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags
 [submodule "bundle/jreybert-vimagit"]
 	path = bundle/jreybert-vimagit
 	url = https://github.com/jreybert/vimagit
@@ -88,3 +88,9 @@
 [submodule "bundle/tomtom_tlib_vim"]
 	path = bundle/tomtom_tlib_vim
 	url = https://github.com/tomtom/tlib_vim
+[submodule "bundle/leafgarland-typescript-vim"]
+	path = bundle/leafgarland-typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/editorconfig-editorconfig-vim"]
+	path = bundle/editorconfig-editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git

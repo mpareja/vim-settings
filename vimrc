@@ -110,7 +110,7 @@ let g:dispatch_terminal_exec = 'i3-sensible-terminal -e'
 map <leader>tl :Start npm run lint -- --fix %<CR>
 map <leader>tt mT:TestNearest<CR>
 map <leader>ts mT:TestFile<CR>
-map <leader>tw :Start cd %:h && npm run watch-test -- %:p<CR>
+map <leader>tw :Start cd %:h && watch-tests %:p<CR>
 map <leader>td :Start ndb node_modules/.bin/jest --no-coverage --watch --runInBand -- -- %<CR>
 map <leader>tr :TestLast<CR>
 " map <leader>te :autocmd BufWritePost *.js MakeGreen<CR>

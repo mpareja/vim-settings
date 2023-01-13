@@ -147,7 +147,7 @@ let g:fuf_dir_exclude = '\v(^|[/\\])(\.(hg|git|bzr))|(node_modules)|(build)(|(co
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])(\.(hg|git|bzr))|(build)|(node_modules)|(coverage)($|[/\\])'
 let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])(\.(hg|git|bzr))|(build)|(node_modules)|(coverage)($|[/\\])'
 
-nnoremap <silent> <leader>ss :Ggrep '\<<cword>\>'<CR>
+nnoremap <silent> <leader>ss :Ggrep \\\<<cword>\\><CR>
 if has("win32")
 	nnoremap <silent> <leader>sb :FufBuffer<CR>
 	nnoremap <silent> <leader>sc :FufCoverageFile<CR>

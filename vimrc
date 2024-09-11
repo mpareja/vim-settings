@@ -197,3 +197,7 @@ let g:gutentags_generate_on_empty_buffer = 0
 
 " snipmate configuration
 let g:snipMate = { 'snippet_version' : 1 }
+
+""""" NERDTree
+nnoremap <silent> <leader>nn :NERDTreeToggle<CR>
+nnoremap <silent> <leader>nf :NERDTreeFind<CR>

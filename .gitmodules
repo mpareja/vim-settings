@@ -94,3 +94,6 @@
 [submodule "bundle/preservim_nerdtree"]
 	path = bundle/preservim_nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "bundle/tpope-vim-rhubarb"]
+	path = bundle/tpope-vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git

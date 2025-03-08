@@ -130,9 +130,10 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 if !has("win32") || has("gui_win32")
+	" DISABLED: let desktop theme control vim theme
 	" use solarized dark colour scheme
-	set background=dark
-	colorscheme solarized
+	" set background=dark
+	" colorscheme solarized
 endif
 
 " bring up cheatsheet
